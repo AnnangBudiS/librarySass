@@ -1,0 +1,17 @@
+.card {
+    display: block;
+    padding: $spacer;
+    border: 1px solid #ddd;
+
+    .card-title {
+        font-size: $font-size-base;
+        padding-bottom: $spacer;
+        font-weight: bold;
+    }
+    .card-body {
+        font-size: $font-size-base ;
+
+    }
+
+}
+

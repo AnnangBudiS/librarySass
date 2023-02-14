@@ -1,0 +1,78 @@
+//color
+$blue :#0d6efd;
+$purple: #6f42c1;
+$indigo: #6610f2;
+$pink: #d63384;
+$red : #dc3545;
+$orange: #fd7e14;
+$yellow : #ffc107;
+$green : #198754;
+$teal : #20c997;
+$cyan : #0dcaf0;
+$gray : #adb5bd;
+$black : #000;
+$white : #fff;
+
+//color palette
+$colors: (
+    "blue" : $blue,
+    "purple": $purple,
+    "indigo" : $indigo,
+    "pink": $pink,
+    "red": $red,
+    "orange": $orange,
+    "yellow": $yellow,
+    "green": $green,
+    "teal": $teal,
+    "cyan": $cyan,
+    "gray": $gray,
+);
+//spacing 
+
+$base-padding : 0.75rem;
+$base-margin: 0.75rem;
+$spacer: 1rem;
+
+
+//font 
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap');
+$myfont : 'Poppins', sans-serif;
+$font-size-base: 1rem;
+$font-size-root: null;
+$font-size-sm: $font-size-base * .875;
+$font-size-lg: $font-size-base * 1.25;
+
+$font-size: (
+     "1" : $font-size-base,
+     "2" : $font-size-base * 1.25,
+     "3" : $font-size-base * 1.5,
+     "4" : $font-size-base * 1.75,
+     "5" : $font-size-base * 2,
+     "6" : $font-size-base * 2.5,
+
+);
+
+$font-weight: (
+    "100" : 100,
+    "200" : 200,
+    "300" : 300,
+    "400" : 400,
+    "500" : 500,
+    "600" : 600,
+    "700" : 700,
+    "800" : 800,
+);
+
+@each $key, $val in $font-size {
+    .font-#{$key}{
+        font-size: $val;
+    }
+};
+
+@each $key, $val in $font-weight {
+    .font-w-#{$key} {
+        font-weight: $val;
+    }
+};
+
